@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Л/Р №2 - ИМТ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <h1 class="title">Лабораторная работа №2</h1>
+            </div>
+        </div>
+        <section class="imt">
+            <div class="container">
+                <div class="imt__grid">
+                    <h2 class="imt__title">Расчёт ИМТ</h2>
+                    <ul class="imt__grid__content-ul">
+                        <li class="imt__grid__content-li height">
+                            <input type="text" name="height" id="height" class="input" maxlength="5">
+                        </li>
+                        <li class="imt__grid__content-li weight">
+                            <input type="text" name="weight" id="weight" class="input" maxlength="5">
+                        </li>
+                        <li class="imt__grid__content-li submit">
+                            <button type="submit" class="btn__submit">Рассчитать</button>
+                        </li>
+                        <li class="imt__grid__content-li alert none">
+                            <p class="alert-style">Введите числовое значение!</p>
+                        </li>
+                        <li class="imt__grid__content-li numNone none">
+                            <p class="alert-style">Одно или несколько полей не заполнены</p>
+                        </li>
+                        <li class="imt__grid__content-li imtNone none">
+                            <p class="imt__info">Ваш ИМТ = <span id="imt-info"></span></p>
+                        </li>
+                        <li class="imt__grid__content-li imtNone-res none">
+                            <p class="imt__info-result">Не определено</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table__img">
+                    <table class="table">
+                        <tr>
+                            <th>Индекс массы тела</th>
+                            <th>Соответствие между массой тела человека и его ростом</th>
+                        </tr>
+                        <tr>
+                            <th>16 и менее</th>
+                            <th>Выраженный дифицит массы тела</th>
+
+                        </tr>
+                        <tr>
+                            <th>16 - 18.5</th>
+                            <th>Недостаточная(дефицит) масса тела</th>
+                        </tr>
+                        <tr>
+                            <th>18.5 - 24.99</th>
+                            <th>Норма</th>
+                        </tr>
+                        <tr>
+                            <th>25 - 30</th>
+                            <th>Избыточная масса тела(предожирение)</th>
+                        </tr>
+                        <tr>
+                            <th>30 - 35</th>
+                            <th>Ожирение первой степени</th>
+                        </tr>
+                        <tr>
+                            <th>35 - 40</th>
+                            <th>Ожирение второй степени</th>
+                        </tr>
+                        <tr>
+                            <th>40 и более</th>
+                            <th>Ожирение третьей степени(морбидное)</th>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+<script src="/main.js"></script>
+</body>
+</html>
